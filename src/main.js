@@ -1,4 +1,4 @@
-const numberOfTiles = 4;
+const numberOfTiles = 6;
 
 // Create the scene and a camera to view it
 var scene = new THREE.Scene();
@@ -105,7 +105,7 @@ function conditionallyBuildGeometries() {
 var image = { width: 80, height: 80 };
 
 // Identify the total number of cols & rows in the image atlas
-var atlas = { width: 5120, height: 5120, cols: 64, rows: 64 };
+var atlas = { width: 5120, height: 7680, cols: 64, rows: 96 };
 
 // Iterate over the 20 textures, and for each, add a new mesh to the scene
 function buildGeometry() {
