@@ -1,4 +1,23 @@
-const numberOfTiles = 6;
+let config = {};
+let configSelect = getPersisentObject('config');
+const configElement = document.getElementById('config');
+
+if (configSelect === undefined) {
+    setPersisentObject('celeba', 'config');
+    configSelect = 'celeba';
+}
+
+if (configSelect === 'celeba') {
+    configElement.value = 'celeba';
+    config = celebaConfig;
+}
+
+if (configSelect === 'fashion') {
+    configElement.value = 'fashion';
+    config = fashionConfig;
+}
+
+const numberOfTiles = config.tiles;
 
 // Create the scene and a camera to view it
 var scene = new THREE.Scene();
@@ -8,7 +27,7 @@ var scene = new THREE.Scene();
 **/
 
 // Specify the portion of the scene visiable at any time (in degrees)
-var fieldOfView = 75;
+var fieldOfView = 90;
 
 // Specify the camera's aspect ratio
 var aspectRatio = window.innerWidth / window.innerHeight;
@@ -19,8 +38,8 @@ between those planes will be rendered in the scene
 (these values help control the number of items rendered
 at any given time)
 */
-var nearPlane = 100;
-var farPlane = 50000;
+var nearPlane = 30;
+var farPlane = 75000;
 
 // Use the values specified above to create a camera
 var camera = new THREE.PerspectiveCamera(
@@ -28,8 +47,8 @@ var camera = new THREE.PerspectiveCamera(
 );
 
 // Finally, set the camera's position
-camera.position.z = 5500;
-camera.position.y = -100;
+camera.position.z = 35000; // 5500;
+camera.position.y = 0; // -100;
 
 /**
 * Renderer
@@ -37,6 +56,8 @@ camera.position.y = -100;
 
 // Create the canvas with a renderer
 var renderer = new THREE.WebGLRenderer({ antialias: true });
+
+// renderer.setClearColor(0xffffff); bg color
 
 // Add support for retina displays
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -61,7 +82,7 @@ var materials = {};
 
 // Load the image position JSON file
 var loader = new THREE.FileLoader();
-loader.load('./assets/image_tsne_projections.json', function (data) {
+loader.load(`./assets/${config.path}/image_tsne_projections.json`, function (data) {
     imagePositions = JSON.parse(data);
     conditionallyBuildGeometries()
 })
@@ -75,7 +96,7 @@ var loader = new THREE.TextureLoader();
 for (var i = 0; i < numberOfTiles; i++) {
     //var url = 'https://s3.amazonaws.com/duhaime/blog/tsne-webgl/data/';
     //url += 'atlas_files/32px/atlas-' + i + '.jpg';
-    const url = `./assets/faces_${i}.jpg`;
+    const url = `./assets/${config.path}/images_${i}.jpg`;
     // Pass the texture index position to the callback function
     loader.load(url, handleTexture.bind(null, i));
 }
@@ -91,7 +112,7 @@ function handleTexture(idx, texture) {
 // If the textures and the mapping from image idx to positional information
 // are all loaded, create the geometries
 function conditionallyBuildGeometries() {
-    if (Object.keys(materials).length === 4 && imagePositions) {
+    if (Object.keys(materials).length === numberOfTiles && imagePositions) {
         document.querySelector('#loading').style.display = 'none';
         buildGeometry();
     }
@@ -102,10 +123,10 @@ function conditionallyBuildGeometries() {
 **/
 
 // Identify the subimage size in px
-var image = { width: 80, height: 80 };
+var image = config.image;
 
 // Identify the total number of cols & rows in the image atlas
-var atlas = { width: 5120, height: 7680, cols: 64, rows: 96 };
+var atlas = config.atlas;
 
 // Iterate over the 20 textures, and for each, add a new mesh to the scene
 function buildGeometry() {
@@ -128,7 +149,7 @@ function buildGeometry() {
 function getCoords(i, j) {
     var idx = (i * atlas.rows * atlas.cols) + j;
     var coords = imagePositions[idx];
-    coords.x *= 900;
+    coords.x *= 1100;
     coords.y *= 450;
     coords.z = (-200 + j / 100);
     return coords;

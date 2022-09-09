@@ -6,15 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
-    <title>Document</title>
+    <title>GAN Latent Space Web Explorer w/ t-SNE Visualization</title>
 </head>
 
 <body>
-    <div id="loading" style="height: 100vh; display: flex; align-items: center; justify-content: center;">Loading</div>
+    <div id="loading" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <span>
+            Loading
+        </span>
+    </div>
+    <div style="position: absolute; top: 2.7em; left: 50%; margin-right: -50%; transform: translate(-50%, -50%); text-align: center;">
+        <span style="display: block; font-size: 2.1em; font-weight: bold;">
+            GAN Latent Space Web Explorer w/ t-SNE Visualization
+        </span>
+        <span style="color: gray; font-size: 0.9em;">2d representation of gan latent space</span>
+    </div>
+    <div style="position: absolute; left: 0.9em; top: 1.23em;">
+        <select id="config" onchange="selectConfig(this)" style="background-color: transparent; border: 1px solid white; border-radius: 4.5px;">
+          <option value="celeba">celeba gan latent space</option>
+          <option value="fashion">fashion dataset (t-sne testing)</option>
+        </select>
+    </div>
     
     <script src="./src/three.min.js"></script>
     <script src="./src/trackball-controls.js"></script>
     <script src="./src/texture-loader.js"></script>
+    <script src="./src/config.js"></script>
+    <script src="./src/utils.js"></script>
     <script src="./src/main.js"></script>
 </body>
 
