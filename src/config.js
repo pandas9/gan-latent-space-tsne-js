@@ -1,16 +1,17 @@
 const celebaConfig = {
     path: 'celeba_gan',
-    tiles: 6,
+    tiles: 21,
     image: {
-        width: 60,
-        height: 60
+        width: 80,
+        height: 80
     },
     atlas: {
-        width: 5120,
-        height: 7680,
-        cols: 85,
-        rows: 128
-    }
+        width: 3280,
+        height: 3280,
+        cols: 41,
+        rows: 41
+    },
+    size: 35301
 };
 
 const fashionConfig = {
@@ -25,6 +26,7 @@ const fashionConfig = {
         height: 2480,
         cols: 31,
         rows: 31
-    }
+    },
+    size: 44206
 };
 

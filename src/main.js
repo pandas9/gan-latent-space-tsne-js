@@ -17,6 +17,8 @@ if (configSelect === 'fashion') {
     config = fashionConfig;
 }
 
+document.getElementById('latent-size').innerText = `${configSelect === 'celeba' ? 'latent ' : ''} size ${config.size}`;
+
 const numberOfTiles = config.tiles;
 
 // Create the scene and a camera to view it
@@ -48,7 +50,7 @@ var camera = new THREE.PerspectiveCamera(
 
 // Finally, set the camera's position
 camera.position.z = 35000; // 5500;
-camera.position.y = 0; // -100;
+camera.position.y = -100; // -100;
 
 /**
 * Renderer
@@ -149,8 +151,8 @@ function buildGeometry() {
 function getCoords(i, j) {
     var idx = (i * atlas.rows * atlas.cols) + j;
     var coords = imagePositions[idx];
-    coords.x *= 1100;
-    coords.y *= 450;
+    coords.x *= 1200;
+    coords.y *= 600;
     coords.z = (-200 + j / 100);
     return coords;
 }
