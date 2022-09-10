@@ -130,7 +130,7 @@ var image = config.image;
 // Identify the total number of cols & rows in the image atlas
 var atlas = config.atlas;
 
-// Iterate over the 20 textures, and for each, add a new mesh to the scene
+// Iterate over the N textures, and for each, add a new mesh to the scene
 function buildGeometry() {
     for (var i = 0; i < numberOfTiles; i++) {
         // Create one new geometry per atlas
