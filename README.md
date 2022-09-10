@@ -1,1 +1,1 @@
-# gan-latent-space-tsne-js
+# GAN Latent Space Web Explorer w/ t-SNE Visualization
