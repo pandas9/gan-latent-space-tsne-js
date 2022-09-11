@@ -6,6 +6,10 @@ Robust way to explore gan model latent space on web using t-SNE statistical meth
 [View GAN Explorer](https://pages.github.com/) <br />
 
 # Requirements
+imagemagick <br />
+requirements.txt <br />
+package.json <br />
+
 
 # To do
 - Port to React.js <br />
