@@ -1,9 +1,9 @@
 <h1 align="center">GAN Latent Space Web Explorer w/ t-SNE Visualization</h1>
 
-[![gan-latent-space-web-explorer](examples/index.png?raw=true)](https://www.google.com)
+[![gan-latent-space-web-explorer](examples/index.png?raw=true)](https://pandas9.github.io/gan-latent-space-tsne-js/)
 
 Robust way to explore GAN model latent space on web using t-SNE statistical method <br />
-[View GAN Explorer](https://pages.github.com/) <br />
+[View GAN Explorer](https://pandas9.github.io/gan-latent-space-tsne-js/) <br />
 
 This is example on how you can create latent space web explorer for any GAN model using js and python <br />
 Example is based on three.js library, t-SNE statistical method and vanilla js. This example will allow you to create latent space web explorer for any model by generating images of your latent space, using t-SNE 2D coordinate space to position images and three.js for WebGL-powered visualization in interactive 3D environment <br />
