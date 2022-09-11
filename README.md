@@ -18,8 +18,10 @@ imagemagick <br />
 - Port to React.js <br />
 - Convert classify_images.py to tf2 and have script only create vectorized representations of each image <br />
 - Add 3D visualization <br />
-- Allow objects to be interactive for interpolation / zoom / vector arithmetic <br />
+- Allow objects to be interactive for interpolation / zoom / vector arithmetic ... etc <br />
 - Dynamic atlas/tile size <br />
+- Indication of load progress <br />
+- Guide through the visualization <br />
 
 # Acknowledgements
 [machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network/](https://machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network/) <br />
