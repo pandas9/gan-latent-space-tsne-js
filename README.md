@@ -48,8 +48,7 @@ inside file make sure to change latent_size and other variables <br />
 
 6. Generate atlases and serve the app <br />
 `python create_atlases.py` <br /> <br />
-by now you should have `image_tsne_projections.json` and `images_..jpg` that were generated for your atlases next is to create new folder inside `/src/assets` and copy it inside and to modify `config.js` inside `/src/` folder that will fit your model <br />
-
+by now you should have `image_tsne_projections.json` and `images_..jpg` that were generated for your atlases next is to create new folder inside `/src/assets` and copy it inside and to modify `config.js` inside `/src/` folder that will fit your model <br /> <br/ >
 serve app using node `node app.js` and visit `localhost:3000` to explore your GAN latent space <br />
 
 # Requirements
