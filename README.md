@@ -36,17 +36,21 @@ X = (X + 1) / 2.0
 generate_images(X, n)
 </pre>
 
-<b>3.</b> Use classify_images.py to convert to create create vectorized representations of each image <br />
+3. Use classify_images.py to convert to create create vectorized representations of each image <br />
 `python classify_images.py 'faces/*'` <br />
 
 4. Run create_tsne_projection.py to get t-SNE coordinates <br />
-`python create_tsne_projection.py` *change variables to fit your model<br />
+`python create_tsne_projection.py`<br />
+inside file make sure to change latent_size and other variables <br />
 
 5. Split latent space images into equal parts for atlas <br />
-`python split_latent_space.py` *change variables to fit your model <br />
+`python split_latent_space.py` <br />
 
 6. Generate atlases and serve the app <br />
-`python create_atlases.py` *change variables to fit your model <br />
+`python create_atlases.py` <br />
+by now you should have `image_tsne_projections.json` and `images_..jpg` that were generated for your atlases next is to create new folder inside `/src/assets` and copy it inside and to modify `config.js` inside `/src/` folder that will fit your model <br />
+
+serve app using node `node app.js` and visit `localhost:3000` to explore your GAN latent space <br />
 
 # Requirements
 python3 <br />
