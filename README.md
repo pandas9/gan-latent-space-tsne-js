@@ -19,10 +19,10 @@ serve app using node <br />
 
 # Custom Gan Explorer
 1. Using your GAN model generate images and save them i.e
-<code>
+<pre>
 test <br />
 123
-</code>
+</pre>
 
 # Requirements
 python3 <br />
