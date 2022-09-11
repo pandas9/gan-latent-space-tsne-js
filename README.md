@@ -18,7 +18,9 @@ command inside project root folder <br />
 serve app using node <br />
 
 # Custom Gan Explorer
-1. Using your GAN model generate images and save them i.e <br />
+1. Make sure to have requirements installed <br />
+
+2. Using your GAN model generate images and save them i.e <br />
 <pre>
 # example.py
 
@@ -34,13 +36,17 @@ X = (X + 1) / 2.0
 generate_images(X, n)
 </pre>
 
-2. Use classify_images.py to convert to create create vectorized representations of each image <br />
+3. Use classify_images.py to convert to create create vectorized representations of each image <br />
 `python classify_images.py 'faces/*'` <br />
 
-3. Run create_tsne_projection.py to get t-SNE coordinates <br />
-`python create_tsne_projection.py` <br />
+4. Run create_tsne_projection.py to get t-SNE coordinates <br />
+`python create_tsne_projection.py` *change variables to fit your model<br />
 
-4. Split latent space images into equal parts for atlas
+5. Split latent space images into equal parts for atlas <br />
+`python split_latent_space.py` *change variables to fit your model <br />
+
+6. Generate atlases and serve the app <br />
+`python create_atlases.py` *change variables to fit your model <br />
 
 # Requirements
 python3 <br />
