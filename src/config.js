@@ -1,6 +1,6 @@
 const celebaConfig = {
     path: 'celeba_gan',
-    tiles: 21,
+    atlas: 21,
     image: {
         width: 80,
         height: 80
@@ -16,7 +16,7 @@ const celebaConfig = {
 
 const fashionConfig = {
     path: 'fashion_dataset',
-    tiles: 46,
+    atlas: 46,
     image: {
         width: 60,
         height: 80

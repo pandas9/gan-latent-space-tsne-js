@@ -5,7 +5,7 @@ latent_size = 35301
 parts = 21
 columns = 41
 
-os.makedirs(f'./tiles/', exist_ok=True)
+os.makedirs(f'./atlas/', exist_ok=True)
 
 for part in range(0, parts):
     if os.path.exists('./images_to_montage.txt'):
@@ -15,4 +15,4 @@ for part in range(0, parts):
             f.write(img + '\n')
 
     #!montage `cat images_to_montage.txt` -geometry +0+0 -background none -tile 31x images_0.jpg
-    os.system(f'montage `cat images_to_montage.txt` -geometry +0+0 -background none -tile {columns}x ./tiles/images_{part}.jpg')
+    os.system(f'montage `cat images_to_montage.txt` -geometry +0+0 -background none -tile {columns}x ./atlas/images_{part}.jpg')

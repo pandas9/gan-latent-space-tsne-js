@@ -18,7 +18,7 @@ command inside project root folder <br />
 serve app using node <br />
 
 # Custom Gan Explorer
-1. Using your GAN model generate images and save them i.e
+1. Using your GAN model generate images and save them i.e <br />
 <pre>
 # example.py
 
@@ -34,6 +34,14 @@ X = (X + 1) / 2.0
 generate_images(X, n)
 </pre>
 
+2. Use classify_images.py to convert to create create vectorized representations of each image <br />
+`python classify_images.py 'faces/*'` <br />
+
+3. Run create_tsne_projection.py to get t-SNE coordinates <br />
+`python create_tsne_projection.py` <br />
+
+4. Split latent space images into equal parts for atlas
+
 # Requirements
 python3 <br />
 node.js <br />
@@ -45,7 +53,7 @@ imagemagick <br />
 - Convert classify_images.py to tf2 and have script only create vectorized representations of each image <br />
 - Add 3D visualization <br />
 - Allow objects to be interactive for interpolation / zoom / vector arithmetic ... etc <br />
-- Dynamic atlas/tile size <br />
+- Dynamic atlas size <br />
 - Indication of load progress <br />
 - Guide through the visualization <br />
 

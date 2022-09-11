@@ -19,7 +19,7 @@ if (configSelect === 'fashion') {
 
 document.getElementById('latent-size').innerText = `${configSelect === 'celeba' ? 'latent ' : ''} size ${config.size}`;
 
-const numberOfTiles = config.tiles;
+const numberOfAtlas = config.atlas;
 
 // Create the scene and a camera to view it
 var scene = new THREE.Scene();
@@ -95,7 +95,7 @@ loader.load(`./assets/${config.path}/image_tsne_projections.json`, function (dat
 
 // Create a texture loader so we can load our image file
 var loader = new THREE.TextureLoader();
-for (var i = 0; i < numberOfTiles; i++) {
+for (var i = 0; i < numberOfAtlas; i++) {
     //var url = 'https://s3.amazonaws.com/duhaime/blog/tsne-webgl/data/';
     //url += 'atlas_files/32px/atlas-' + i + '.jpg';
     const url = `./assets/${config.path}/images_${i}.jpg`;
@@ -114,7 +114,7 @@ function handleTexture(idx, texture) {
 // If the textures and the mapping from image idx to positional information
 // are all loaded, create the geometries
 function conditionallyBuildGeometries() {
-    if (Object.keys(materials).length === numberOfTiles && imagePositions) {
+    if (Object.keys(materials).length === numberOfAtlas && imagePositions) {
         document.querySelector('#loading').style.display = 'none';
         buildGeometry();
     }
@@ -132,7 +132,7 @@ var atlas = config.atlas;
 
 // Iterate over the N textures, and for each, add a new mesh to the scene
 function buildGeometry() {
-    for (var i = 0; i < numberOfTiles; i++) {
+    for (var i = 0; i < numberOfAtlas; i++) {
         // Create one new geometry per atlas
         var geometry = new THREE.Geometry();
         for (var j = 0; j < atlas.cols * atlas.rows; j++) {
