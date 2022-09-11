@@ -19,7 +19,7 @@ command inside project root folder <br />
 3. `node app.js` <br />
 serve app using node <br />
 
-# Custom Gan Explorer
+# Build Gan Explorer For Your Model
 1. Make sure to have requirements installed and clone the project <br />
 
 2. Using your GAN model generate latent points and save each as image i.e <br />
