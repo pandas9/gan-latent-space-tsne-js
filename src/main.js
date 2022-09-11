@@ -158,7 +158,7 @@ function getCoords(i, j) {
     var coords = imagePositions[idx];
     coords.x *= 1200;
     coords.y *= 600;
-    coords.z = (-200 + j / 100);
+    coords.z = (j / 9); // (-200 + j / 100);
     return coords;
 }
 
