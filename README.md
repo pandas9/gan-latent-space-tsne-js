@@ -75,3 +75,4 @@ imagemagick <br />
 [douglasduhaime.com/posts/visualizing-tsne-maps-with-three-js](https://douglasduhaime.com/posts/visualizing-tsne-maps-with-three-js.html) <br />
 [github.com/YaleDHLab/pix-plot](https://github.com/YaleDHLab/pix-plot) <br />
 [artsexperiments.withgoogle.com/tsnemap](https://artsexperiments.withgoogle.com/tsnemap/) <br />
+[towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d](https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d) <br />
