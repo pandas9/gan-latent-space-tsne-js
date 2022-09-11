@@ -36,7 +36,7 @@ X = (X + 1) / 2.0
 generate_images(X, n)
 </pre>
 
-3. Use classify_images.py to convert to create create vectorized representations of each image <br />
+<b>3.</b> Use classify_images.py to convert to create create vectorized representations of each image <br />
 `python classify_images.py 'faces/*'` <br />
 
 4. Run create_tsne_projection.py to get t-SNE coordinates <br />
