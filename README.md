@@ -12,6 +12,7 @@ Robust way to explore gan model latent space on web using t-SNE statistical meth
 - Convert classify_images.py to tf2 and have script only create vectorized representations of each image <br />
 - Add 3D visualization <br />
 - Allow objects to be interactive for interpolation / zoom / vector arithmetic <br />
+- Dynamic atlas/tile size <br />
 
 # Acknowledgements
 [machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network/](https://machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network/) <br />
