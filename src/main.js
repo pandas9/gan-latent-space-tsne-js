@@ -8,13 +8,18 @@ if (configSelect === undefined) {
 }
 
 if (configSelect === 'celeba') {
-    configElement.value = 'celeba';
+    configElement.value = configSelect;
     config = celebaConfig;
 }
 
 if (configSelect === 'fashion') {
-    configElement.value = 'fashion';
+    configElement.value = configSelect;
     config = fashionConfig;
+}
+
+if (configSelect === 'yourCustomConfig-optionValue') {
+    configElement.value = configSelect;
+    config = yourCustomConfig;
 }
 
 document.getElementById('latent-size').innerText = `latent size ${config.size}`;
