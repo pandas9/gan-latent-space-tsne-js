@@ -6,12 +6,9 @@ Robust way to explore gan model latent space on web using t-SNE statistical meth
 [View GAN Explorer](https://pages.github.com/) <br />
 
 # Requirements
-#### If you are running example <br />
-package.json <br />
-
-#### If you wanna build custom explorer <br />
+python3 <br />
+node.js <br />
 imagemagick <br />
-requirements.txt <br />
 
 
 # To do
