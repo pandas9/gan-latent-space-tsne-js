@@ -7,7 +7,7 @@ Robust way to explore gan model latent space on web using t-SNE statistical meth
 
 # Requirements
 
-# To Do
+# To do
 - Port to React.js <br />
 - Convert classify_images.py to tf2 and have script only create vectorized representations of each image <br />
 - Add 3D visualization <br />
