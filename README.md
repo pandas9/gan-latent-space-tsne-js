@@ -7,7 +7,6 @@ Robust way to explore GAN model latent space on web using t-SNE statistical meth
 
 This is example on how you can create latent space web explorer for any GAN model using js and python <br />
 Example is based on three.js library, t-SNE statistical method and vanilla js <br />
-If you are looking to try and run this locally check "Run Locally" section for everything else check creating custom web gan explorer and acknowledgements  <br />
 
 t-SNE allows us to position images near other similar-looking images in the 2D coordinate space and three.js library to build a WebGL-powered visualization that can display tens of thousands of images in an interactive 3D environment
 
