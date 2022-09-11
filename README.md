@@ -13,7 +13,7 @@ t-SNE allows us to position images near other similar-looking images in the 2D c
 Inside examples there is `celeba_gan_e30.h5` that has been trained on celeba dataset in case someone wants to try and build custom GAN explorer but doesn't have machines to train model <br />
 
 # Run Locally
-1. clone github project <br />
+1. clone github project and set `githubPages` to `false` inside `main.js` <br />
 2. `npm install` <br />
 command inside project root folder <br />
 3. `node app.js` <br />

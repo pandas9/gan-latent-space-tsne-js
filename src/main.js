@@ -1,3 +1,5 @@
+const githubPages = true;
+
 let config = {};
 let configSelect = getPersisentObject('config');
 const configElement = document.getElementById('config');
@@ -89,7 +91,7 @@ var materials = {};
 
 // Load the image position JSON file
 var loader = new THREE.FileLoader();
-loader.load(`./assets/${config.path}/image_tsne_projections.json`, function (data) {
+loader.load(`${githubPages ? 'src' : '.'}/assets/${config.path}/image_tsne_projections.json`, function (data) {
     imagePositions = JSON.parse(data);
     conditionallyBuildGeometries()
 })
@@ -103,7 +105,7 @@ var loader = new THREE.TextureLoader();
 for (var i = 0; i < numberOfAtlas; i++) {
     //var url = 'https://s3.amazonaws.com/duhaime/blog/tsne-webgl/data/';
     //url += 'atlas_files/32px/atlas-' + i + '.jpg';
-    const url = `./assets/${config.path}/images_${i}.jpg`;
+    const url = `${githubPages ? 'src' : '.'}/assets/${config.path}/images_${i}.jpg`;
     // Pass the texture index position to the callback function
     loader.load(url, handleTexture.bind(null, i));
 }
