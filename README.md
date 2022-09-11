@@ -6,7 +6,10 @@ Robust way to explore GAN model latent space on web using t-SNE statistical meth
 [View GAN Explorer](https://pages.github.com/) <br />
 
 This is example on how you can create latent space web explorer for any GAN model using js and python <br />
-If you are looking to try and run this locally check "Run Locally" section for everything else check creating custom web gan explorer and acknowledgements
+Example is based on three.js library, t-SNE statistical method and vanilla js <br />
+If you are looking to try and run this locally check "Run Locally" section for everything else check creating custom web gan explorer and acknowledgements  <br />
+
+t-SNE allows us to position images near other similar-looking images in the 2D coordinate space and three.js library to build a WebGL-powered visualization that can display tens of thousands of images in an interactive 3D environment
 
 # Requirements
 python3 <br />
@@ -28,3 +31,4 @@ imagemagick <br />
 [medium.com/mlearning-ai/latent-space-representation-a-hands-on-tutorial-on-autoencoders-in-tensorflow](https://medium.com/mlearning-ai/latent-space-representation-a-hands-on-tutorial-on-autoencoders-in-tensorflow-57735a1c0f3f) <br />
 [douglasduhaime.com/posts/visualizing-tsne-maps-with-three-js](https://douglasduhaime.com/posts/visualizing-tsne-maps-with-three-js.html) <br />
 [github.com/YaleDHLab/pix-plot](https://github.com/YaleDHLab/pix-plot) <br />
+[artsexperiments.withgoogle.com/tsnemap](https://artsexperiments.withgoogle.com/tsnemap/) <br />
