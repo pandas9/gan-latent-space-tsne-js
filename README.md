@@ -11,9 +11,14 @@ Example is based on three.js library, t-SNE statistical method and vanilla js <b
 t-SNE allows us to position images near other similar-looking images in the 2D coordinate space and three.js library to build a WebGL-powered visualization that can display tens of thousands of images in an interactive 3D environment
 
 # Run Locally
-clone github project <br />
-run npm install command inside project root folder <br />
-serve app using node app.js <br />
+1. clone github project <br />
+2. >npm install
+command inside project root folder <br />
+3. >node app.js
+serve app using node <br />
+
+# Custom Gan Explorer
+
 
 # Requirements
 python3 <br />
