@@ -19,7 +19,7 @@ if (configSelect === 'fashion') {
 
 document.getElementById('latent-size').innerText = `${configSelect === 'celeba' ? 'latent ' : ''} size ${config.size}`;
 
-const numberOfAtlas = config.atlas;
+const numberOfAtlas = config.atlasNumber;
 
 // Create the scene and a camera to view it
 var scene = new THREE.Scene();
