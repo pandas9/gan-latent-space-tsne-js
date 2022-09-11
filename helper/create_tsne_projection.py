@@ -7,7 +7,7 @@ import os
 # create datastores
 image_vectors = []
 chart_data = []
-latent_size = 35301
+latent_size = 35301 # calculate_latent_size.py
 
 # build a list of image vectors
 vector_files = sorted(glob.glob('./image_vectors/*.npz')

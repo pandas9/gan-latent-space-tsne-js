@@ -20,7 +20,8 @@ command inside project root folder <br />
 serve app using node <br />
 
 # Build Gan Explorer For Your Model
-1. Make sure to have requirements installed and clone the project <br />
+1. Clone the project and run calculate_latent_size.py and set variables inside file that will fit your model this is important for atlas size and how your latent space is visualized with three.js <br />
+`python calculate_latent_size.py`<br />
 
 2. Using your GAN model generate latent points and save each as image i.e <br />
 <pre>

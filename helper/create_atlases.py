@@ -1,9 +1,9 @@
 import os
 import glob
 
-latent_size = 35301
-parts = 21
-columns = 41
+latent_size = 35301 # calculate_latent_size.py
+parts = 21 # calculate_latent_size.py
+columns = 41 # calculate_latent_size.py
 
 os.makedirs(f'./atlas/', exist_ok=True)
 
