@@ -13,9 +13,9 @@ t-SNE allows us to position images near other similar-looking images in the 2D c
 # Run Locally
 1. clone github project <br />
 2. >npm install <br />
-command inside project root folder <br />
+<p>command inside project root folder</p> <br />
 3. >node app.js <br />
-serve app using node <br />
+<p>serve app using node</p> <br />
 
 # Custom Gan Explorer
 
