@@ -2,8 +2,8 @@ import os
 import shutil
 import glob
 
-parts = 21
-latent_size = 35301
+parts = 21 # obtain from calculate_latent_size.py
+latent_size = 35301 # obtain from calculate_latent_size.py
 
 def split(a, n):
     k, m = divmod(len(a), n)
