@@ -3,3 +3,4 @@ numpy
 Pillow
 six
 psutil
+scikit-learn
