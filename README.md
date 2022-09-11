@@ -8,7 +8,9 @@ Robust way to explore GAN model latent space on web using t-SNE statistical meth
 This is example on how you can create latent space web explorer for any GAN model using js and python <br />
 Example is based on three.js library, t-SNE statistical method and vanilla js <br />
 
-t-SNE allows us to position images near other similar-looking images in the 2D coordinate space and three.js library to build a WebGL-powered visualization that can display tens of thousands of images in an interactive 3D environment
+t-SNE allows us to position images near other similar-looking images in the 2D coordinate space and three.js library to build a WebGL-powered visualization that can display tens of thousands of images in an interactive 3D environment <br />
+
+Inside examples there is `celeba_gan_e30.h5` that has been trained on celeba dataset in case someone wants to try and build custom GAN explorer but doesn't have machines to train model <br />
 
 # Run Locally
 1. clone github project <br />
@@ -28,7 +30,7 @@ def generate_images(examples, n):
 	for i in range(n):
 		pyplot.imsave(f'./faces/generated_face_{i}.png', examples[i, :, :])
 
-model = load_model('latest_celeba_gan.h5')
+model = load_model('celeba_gan_e30.h5')
 n = 35301
 latent_points = generate_latent_points(100, n)
 X  = model.predict(latent_points)
