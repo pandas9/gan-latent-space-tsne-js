@@ -19,25 +19,27 @@ serve app using node <br />
 
 # Custom Gan Explorer
 1. Using your GAN model generate images and save them i.e
-`# create a plot of generated images
-def generate_images(examples, n):
-	# plot images
-	for i in range(n):
-		pyplot.imsave(f'./faces/generated_face_{i}.png', examples[i, :, :])
+<code>
+# create a plot of generated images <br />
+def generate_images(examples, n): <br />
+	# plot images <br />
+	for i in range(n): <br />
+		pyplot.imsave(f'./faces/generated_face_{i}.png', examples[i, :, :]) <br />
 
-# load model
-model = load_model('latest_celeba_gan.h5')
-# generate points in latent space
-n = 35301
-latent_points = generate_latent_points(100, n)
-# save points
-savez_compressed('latent_points.npz', latent_points)
-# generate images
-X  = model.predict(latent_points)
-# scale from [-1,1] to [0,1]
-X = (X + 1) / 2.0
-# save plot
-generate_images(X, n)` 
+# load model <br />
+model = load_model('latest_celeba_gan.h5') <br />
+# generate points in latent space <br />
+n = 35301 <br />
+latent_points = generate_latent_points(100, n) <br />
+# save points <br />
+savez_compressed('latent_points.npz', latent_points) <br />
+# generate images <br />
+X  = model.predict(latent_points) <br />
+# scale from [-1,1] to [0,1] <br />
+X = (X + 1) / 2.0 <br />
+# save plot <br />
+generate_images(X, n) <br />
+</code>
 
 # Requirements
 python3 <br />
