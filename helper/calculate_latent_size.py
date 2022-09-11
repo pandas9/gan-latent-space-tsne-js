@@ -6,12 +6,12 @@ max_img_resolution = 2500 # max resolution per atlas
 latent_size = 36000 # desired latent size
 
 columns = int(max_img_resolution / image_h)
-imgs_per_tile = columns * columns
-parts = int(latent_size / imgs_per_tile)
-compatible_latent_size = parts * imgs_per_tile
+imgs_per_atlas = columns * columns
+parts = int(latent_size / imgs_per_atlas)
+compatible_latent_size = parts * imgs_per_atlas
 
 print(
     f"Columns per atlas {columns},",
-    f"Tile Parts {parts},",
+    f"Atlas Parts {parts},",
     f"Latent size {compatible_latent_size}"
 )
