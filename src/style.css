@@ -13,3 +13,18 @@ canvas {
     width: 100% !important;
     height: 100% !important;
 }
+
+.headerContainer {
+    position: absolute;
+    top: 2.7em;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 876px) {
+    .headerContainer {
+        top: 7.2em;
+    }
+}
