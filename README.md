@@ -20,7 +20,7 @@ serve app using node <br />
 # Custom Gan Explorer
 1. Make sure to have requirements installed <br />
 
-2. Using your GAN model generate images and save them i.e <br />
+2. Using your GAN model generate latent points and save each as image i.e <br />
 <pre>
 # example.py
 
