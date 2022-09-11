@@ -2,8 +2,11 @@
 
 [![gan-latent-space-web-explorer](examples/index.png?raw=true)](https://www.google.com)
 
-Robust way to explore gan model latent space on web using t-SNE statistical method <br />
+Robust way to explore GAN model latent space on web using t-SNE statistical method <br />
 [View GAN Explorer](https://pages.github.com/) <br />
+
+This is example on how you can create latent space web explorer for any GAN model using js and python <br />
+If you are looking to try and run this locally check "Run Locally" section for everything else check creating custom web gan explorer and acknowledgements
 
 # Requirements
 python3 <br />
