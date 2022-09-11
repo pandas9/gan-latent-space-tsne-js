@@ -41,7 +41,7 @@ generate_images(X, n)
 
 4. Run create_tsne_projection.py to get t-SNE coordinates <br />
 `python create_tsne_projection.py`<br />
-inside file make sure to change latent_size and other variables <br />
+inside file make sure to change latent_size and other variables same goes for other files below <br />
 
 5. Split latent space images into equal parts for atlas <br />
 `python split_latent_space.py` <br />
